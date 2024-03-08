@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Airplane Maintainance System</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="CodedThemes">
+      <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+      <meta name="author" content="CodedThemes">
+      <!-- Favicon icon -->
+      {% load static %}
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href={% static 'assets/css/bootstrap/css/bootstrap.min.css'%}>
+      <!-- themify-icons line icon -->
+      <link rel="stylesheet" type="text/css" href={% static 'assets/icon/themify-icons/themify-icons.css'%}>
+      <!-- ico font -->
+      <link rel="stylesheet" type="text/css" href={% static 'assets/icon/icofont/css/icofont.css'%}>
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href={% static 'assets/css/style.css'%}>
+      <link rel="stylesheet" type="text/css" href={% static 'assets/css/jquery.mCustomScrollbar.css'%}>
+  </head>
+
+  <body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a class="mobile-search morphsearch-search" href="#">
+                            <i class="ti-search"></i>
+                        </a>
+                        <a href="index.html">
+                             <img class="img-fluid" src="{% static 'assets/images/airplane.png' %}" alt="Theme-Logo" style="height:75px"/>
+                        </a>
+                        <a class="mobile-options">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                            </li>
+
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul style="float: right; margin: 15px; font-weight: 700;font-size: 20px;padding: 2px; border: solid 4px #353c4e ;border-radius: 10px; text-align: center;">
+                                    <span>AIRPLANE MAINTAINANCE SYSTEM</span>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="active">
+                                    <a href="{% url 'index2' %}">
+                                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Dataset</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>    
+                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Classification</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li>
+                                    <a href="{% url 'RF' %}">
+                                        <span class="pcoded-micon"><i class="ti-stats-up"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Random Forest </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url "KNN" %}">
+                                        <span class="pcoded-micon"><i class="ti-panel"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">K-Nearest Neighbours </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url "SVM" %}">
+                                        <span class="pcoded-micon"><i class="ti-pulse"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">SVM </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url "DT" %}">
+                                        <span class="pcoded-micon"><i class="ti-direction-alt"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Decision Tree </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url "NB" %}">
+                                        <span class="pcoded-micon"><i class="ti-bar-chart"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Naive Bayes</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Regression</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li>
+                                    <a href="{% url "reg" %}">
+                                        <span class="pcoded-micon"><i class="ti-ruler-alt-2"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Linear Regression</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li  class="active">
+                                    <a href="{% url "poly" %}">
+                                        <span class="pcoded-micon"><i class="ti-vector"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Polynomial Regression </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url "CNN" %}">
+                                        <span class="pcoded-micon"><i class="ti-layers-alt"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Convolutional Neural Network </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="{% url "rfreg" %}">
+                                        <span class="pcoded-micon"><i class="ti-direction-alt"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">RandomForest Regressor </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                           </ul>
+                    </nav>
+                     <div class="pcoded-content">
+                            <div class="pcoded-inner-content">
+                                <div class="main-body">
+                                    <div class="page-wrapper">
+                                        <!-- Page-header start -->
+                                        <div class="page-header card">
+                                            <div class="row align-items-end">
+                                                <div class="col-lg-8">
+                                                    <div class="page-header-title">
+                                                        <i class="icofont icofont icofont icofont-file-document bg-c-pink"></i>
+                                                        <div class="d-inline">
+                                                            <h4>Polynomial Regression</h4>
+                                                            <span>RMSE: 119</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="page-header-breadcrumb">
+                                                        <ul class="breadcrumb-title">
+                                                            <li class="breadcrumb-item"><a href="#!">RUL Calc</a>
+                                                            </li>
+                                                            <li class="breadcrumb-item"><a href="#!">Results</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                                <div class="row">
+                                                <div class="col-lg-12 col-xl-8">
+                                                    <div class="sub-title"></div>
+                                                        <p class="algo-exp" style="font-size: 18px"><ul type = "square"><li>Polynomial Regression is a regression algorithm that models the
+                                                         relationship between a dependent(y) and independent variable(x) as nth degree polynomial.</li>
+                                                         <li> The Polynomial Regression equation is given below:
+                                                        <br>y= b0+b1x1+ b2x12+ b2x13+...... bnx1n</li>
+                                                        <li>It is also called the special case of Multiple Linear Regression in ML. Because we add some polynomial terms
+                                                        to the Multiple Linear regression equation to convert it into Polynomial Regression.</li>
+                                                        <li>It is a linear model with some modification in order to increase the accuracy.</li>
+                                                        <li>The dataset used in Polynomial regression for training is of non-linear nature.</li>
+                                                        <li>It makes use of a linear regression model to fit the complicated and non-linear functions and datasets.</li></ul></p></div>
+                                                <div class="col-lg-12 col-xl-4">
+                                                    <div class="sub-title"></div>
+                                                        <img src={% static 'assets/images/poly.png'%} style="max-width: 100%">
+                                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-block">        
+                                         <div class="row">
+                                              <div class="col-sm-8 mobile-inputs" >
+                                                   <h4 class="sub-title" style="font-size: 28px;"> REMIANING USEFUL LIFE CALCULATOR</h4>
+                                              
+                                                  <form  method="POST" style="border: 1px solid black; padding: 20px; border-radius: 10px;background-color: #EAECEE;">
+                                                      {% csrf_token %}
+                                                      <div class="form-group row">
+                                                            <div class="col-sm-2">
+                                                              <label class="label-control">Engine ID</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="1" name="id"  required
+                                                              class="form-control .form-txt-primary "  data-toggle="tooltip" data-placement="left" data-original-title="Engine ID"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control">CYCLE</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="8" name="cycle"  required
+                                                              class="form-control .form-txt-primary "  data-toggle="tooltip" data-placement="left" data-original-title="Number of cycles completed"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 2</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="642.54" name="s2"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="T24- Total temperature at LPC outlet (°R)"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control">SENSOR 3</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="1580.89" name="s3"  required
+                                                              class="form-control .form-txt-primary "  data-toggle="tooltip" data-placement="left" data-original-title="T30 - Total temperature at HPC outlet (°R) "
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 4</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="1400.89" name="s4"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="T50 - Total temperature at LPT outlet (°R) "
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control">SENSOR 7</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="553.59" name="s7"  required
+                                                              class="form-control .form-txt-primary "  data-toggle="tooltip" data-placement="left" data-original-title="P30-Total pressure at HPC outlet (psia) "
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 8</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="2388.05" name="s8"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="Nf-Physical fan speed (rpm) "
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 11</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="47.21" name="s11"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="Ps30-Static pressure at HPC outlet (psia)"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 12</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="522.09" name="s12"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="phi-Ratio of fuel flow to Ps30 (pps/psi)"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 13</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="2388.06" name="s13"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="NRf - Corrected fan speed (rpm)"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 15</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="8.4213" name="s15"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="BPR-Bypass Ratio"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 17</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="393" name="s17"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="htBleed - Bleed Enthalpy"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control">SENSOR 20</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="39.05" name="s20"  required
+                                                              class="form-control .form-txt-primary "  data-toggle="tooltip" data-placement="left" data-original-title="W31-HPT coolant bleed (lbm/s)"
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                              <label class="label-control" >SENSOR 21</label>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                              <input type="float" value="23.3224" name="s21"  required
+                                                              class="form-control .form-txt-primary " data-toggle="tooltip" data-placement="left" data-original-title="W32 - LPT coolant bleed (lbm/s) "
+                                                              placeholder="Cycle">
+                                                          </div>
+                                                          <div class="col-sm-6" style="text-align: center">
+                                                          <br><br>
+                                                             <button class="btn btn-md btn-primary">CALULATE RUL</button>
+                                                          </div>
+                                                          <div class="col-sm-6">
+                                                                  <div class="card widget-card-1" id="calc" style="margin-bottom: 0px; border: 2px solid blue; text-align: center">
+                                                                      <div class="card-block-small" style="text-align: right;">
+                                                                          <i id='icon' class="icofont icofont-gears bg-c-blue card1-icon"></i>
+                                                                          <span id="res" style="font-size: 20px; font-weight: 500; padding: 10px; text-align: right;">REMAINING USEFUL LIFE</span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                      </div>
+                                                      
+                                                  </form>
+                                              </div>
+                                              <div class="col-sm-4 mobile-inputs">
+                                                <h4 class="sub-title" style="font-size: 28px;">RESULTS OBTAINED</h4><center>
+                                                   <h3>Graphical Representation</h3><center>
+                                                 <img src={% static 'assets/images/poly1.png'%} style="max-height:100%; max-width: 100%"><br>
+                                                 <h6>RMSE on Train set: 29.257814710288272</h6> </center>
+                                                 <img src={% static 'assets/images/poly2.png'%} style="max-height:100%; max-width: 100%"><br><center>
+                                                 <h6>RMSE on Test set: 119.37711017459462</h6> </center>
+                                              </div>
+                                          </div>
+                                      </div>
+                                   </div>
+                                   <script>  
+                                         if({{var}}>30){
+                                             document.getElementById('res').innerHTML={{var}};
+                                             document.getElementById('calc').style.borderColor='green';
+                                             document.getElementById('icon').className='icofont icofont-gears bg-c-green card1-icon';
+                                         }
+                                         
+                                         else{
+                                             document.getElementById('res').innerHTML={{var}};
+                                             document.getElementById('calc').style.borderColor='red';
+                                             document.getElementById('icon').className='icofont icofont-gears bg-c-red card1-icon';
+                                         }
+                                    </script>                                            
+                            </div>
+                        </div>
+                                                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+<script type="text/javascript" src={%static 'assets/js/jquery/jquery.min.js'%}></script>
+<script type="text/javascript" src={%static 'assets/js/jquery-ui/jquery-ui.min.js'%}></script>
+<script type="text/javascript" src={%static 'assets/js/popper.js/popper.min.js'%}></script>
+<script type="text/javascript" src={%static 'assets/js/bootstrap/js/bootstrap.min.js'%}></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src={%static 'assets/js/jquery-slimscroll/jquery.slimscroll.js'%}></script>
+<!-- modernizr js -->
+<script type="text/javascript" src={%static 'assets/js/modernizr/modernizr.js'%}></script>
+<!-- am chart -->
+<script src={%static 'assets/pages/widget/amchart/amcharts.min.js'%}></script>
+<script src={%static 'assets/pages/widget/amchart/serial.min.js'%}></script>
+<!-- Todo js -->
+<script type="text/javascript" src={%static 'assets/pages/todo/todo.js'%}></script>
+<!-- Custom js -->
+<script type="text/javascript" src={%static 'assets/pages/dashboard/custom-dashboard.js'%}></script>
+<script type="text/javascript" src={%static 'assets/js/script.js'%}></script>
+<script type="text/javascript" src={%static 'assets/js/SmoothScroll.js'%}></script>
+<script src={%static 'assets/js/pcoded.min.js'%}></script>
+<script src={%static 'assets/js/demo-12.js'%}></script>
+<script src={%static 'assets/js/jquery.mCustomScrollbar.concat.min.js'%}></script>
+<script>
+var $window = $(window);
+var nav = $('.fixed-button');
+    $window.scroll(function(){
+        if ($window.scrollTop() >= 200) {
+         nav.addClass('active');
+     }
+     else {
+         nav.removeClass('active');
+     }
+ });
+</script>
+</body>
+
+</html>
