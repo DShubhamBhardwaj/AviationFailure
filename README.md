@@ -71,13 +71,13 @@ python manage.py runserver
 
 ## Screenshots
 - Landing Page
-![Landing Page](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/LandingPage.png)
+![Landing Page](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/LandingPage.png){ width: 200px; }
 - Dashboard
-![Dashboard Data](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DashboardData.png)
+![Dashboard Data](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DashboardData.png){ width: 200px; }
 - Data Processing
-![Data Processing](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DataProcessing.png)
+![Data Processing](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DataProcessing.png){ width: 200px; }
 - Remaining useful Life Calculatorr
-![Remaing USeful Cycle Caclulator](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/RemainingUsefulLifeCalc.png)
+![Remaing USeful Cycle Caclulator](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/RemainingUsefulLifeCalc.png){ width: 200px; }
 
 
 ## How It Works
