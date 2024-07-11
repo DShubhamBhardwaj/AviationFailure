@@ -70,10 +70,13 @@ python manage.py runserver
 3. Explore the interactive dashboard to visualize data and model performance.1
 
 ## Screenshots
-
+- Landing Page
 ![Landing Page](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/LandingPage.png)
+- Dashboard
 ![Dashboard Data](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DashboardData.png)
+- Data Processing
 ![Data Processing](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DataProcessing.png)
+- Remaining useful Life Calculatorr
 ![Remaing USeful Cycle Caclulator](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/RemainingUsefulLifeCalc.png)
 
 
