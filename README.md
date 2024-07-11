@@ -1,24 +1,105 @@
-Our goal is to develop a warning system that informs aerospace engineers in good time about
-impending aircraft breakdowns and offers enough time to prepare for the corresponding
-maintenance measures. The purpose of the project is to use predictive analysis for forecasting
-failures in aircrafts which will ensure the safety of passengers travelling through that aircraft/
-airline.
 
-In this project we show how damage propagation can be modeled within the modules of aircraft
-gas turbine engines. To that end, response surfaces of all sensors are generated via a thermo-dynamical
-simulation model for the engine as a function of variations of flow and efficiency of the modules of
-interest. An exponential rate of change for flow and efficiency loss was imposed for each data set,
-starting at a randomly chosen initial deterioration set point. The rate of change of the flow and
-efficiency denotes an otherwise unspecified fault with increasingly worsening effect. The rates of change
-of the faults were constrained to an upper threshold but were otherwise chosen randomly. Damage
-propagation was allowed to continue until a failure criterion was reached. A health index was defined as
-the minimum of several superimposed operational margins at any given time instant and the failure
-criterion is reached when health index reaches zero. Output of the model was the time series (cycles) of
-sensed measurements typically available from aircraft gas turbine engines.
+# Aviation Failure 
 
-In the project we have NASA turbo fan jet engine dataset that has the readings of 26 sensors in
-total and has the details of remaining useful life of the turbo engines based on the sensor reading. We
-plan on making a prediction model that would compare the prediction done by various algorithms and
-would predict the remaining life of an engine, i.e. the number of hours/Cycles It can fly without any
-hinderance/ risk of failure. Once the remaining Cycles are completed the System recommends the
-engineering team to keep proper maintenance as the engine becomes prone to failure in such cases.
+This project is an Aviation Failure Prediction system developed using Django and various machine learning techniques. The system aims to predict potential failures in aviation components based on historical data, improving maintenance schedules and enhancing safety measures.
+
+
+
+
+
+## Features
+
+- Data ingestion and preprocessing
+- Machine learning model training and evaluation
+- Failure prediction based on input data
+- User authentication and authorization
+- Interactive dashboard for data visualization
+- RESTful API for integration with other systems
+
+
+
+## Requirements
+
+- Python 3.x
+- Django 3.x or higher
+- scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- Django REST framework
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/DShubhamBhardwaj/AviationFailure.git
+cd Aviation
+
+```
+
+2. Create and activate a virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+3. Install the required packages:
+
+
+
+```bash
+pip install -r requirements.txt
+
+```
+
+4. Start the development server:
+
+```bash
+python manage.py runserver
+
+```
+
+## Usage
+
+1. Open a web browser and go to http://127.0.0.1:8000/.
+
+2. Access the prediction interface to input data and receive failure predictions.
+
+3. Explore the interactive dashboard to visualize data and model performance.1
+
+## Screenshots
+
+![Landing Page](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/LandingPage.png)
+![Dashboard Data](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DashboardData.png)
+![Data Processing](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DataProcessing.png)
+![Remaing USeful Cycle Caclulator](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/RemainingUsefulLifeCalc.png)
+
+
+## How It Works
+
+1. Data Ingestion and Preprocessing: Raw aviation data is ingested and preprocessed to make it suitable for training machine learning models. This involves cleaning the data, handling missing values, and feature engineering.
+
+2. Model Training and Evaluation: Various machine learning models are trained on the historical data to predict failures. The models are evaluated using appropriate metrics to select the best performing one.
+
+3. Failure Prediction: The selected model is used to predict potential failures based on new input data. Users can input data through the web interface or via the RESTful API.
+
+4. Interactive Dashboard: An interactive dashboard is provided for visualizing the data and the performance of the machine learning models. This helps in understanding trends and making informed decisions.
+
+
+## Acknowledgements
+
+ - [Django](https://www.php.net/)
+ - [scikit-learn](https://getbootstrap.com/)
+- [Pandas](https://www.php.net/)
+ - [NumPy](https://getbootstrap.com/)
+- [Matplotlib](https://www.php.net/)
+
+
+
+## Documentation
+
+- please find the Complete Project report : [Aviation Failure Project Report](https://drive.google.com/file/d/11vgg8svXjhcwNCa4VCeGLw_yCVY7-xgG/view?usp=sharing)
+- Paper written after research : [FORECASTING FAILURE IN AVAITION INDUSTRY](https://drive.google.com/file/d/1KZf1OteE6GNJlZ5d97jhrHNwlCn4xi3S/view?usp=sharing)
+
