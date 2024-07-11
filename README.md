@@ -93,11 +93,11 @@ python manage.py runserver
 
 ## Acknowledgements
 
- - [Django](https://www.php.net/)
- - [scikit-learn](https://getbootstrap.com/)
-- [Pandas](https://www.php.net/)
- - [NumPy](https://getbootstrap.com/)
-- [Matplotlib](https://www.php.net/)
+ - [Django](https://www.djangoproject.com/)
+ - [scikit-learn](https://scikit-learn.org/)
+- [Pandas]([https://www.php.net/](https://pandas.pydata.org/))
+ - [NumPy](https://numpy.org/)
+- [Matplotlib](https://matplotlib.org/)
 
 
 
