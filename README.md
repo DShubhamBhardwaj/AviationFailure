@@ -70,14 +70,14 @@ python manage.py runserver
 3. Explore the interactive dashboard to visualize data and model performance.1
 
 ## Screenshots
-- Landing Page
-![Landing Page](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/LandingPage.png){ width: 200px; }
-- Dashboard
-![Dashboard Data](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DashboardData.png){ width: 200px; }
-- Data Processing
-![Data Processing](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DataProcessing.png){ width: 200px; }
-- Remaining useful Life Calculatorr
-![Remaing USeful Cycle Caclulator](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/RemainingUsefulLifeCalc.png){ width: 200px; }
+- Landing Page\
+![Landing Page](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/LandingPage.png)
+- Dashboard\
+![Dashboard Data](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DashboardData.png)
+- Data Processing\
+![Data Processing](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/DataProcessing.png)
+- Remaining useful Life Calculator\
+![Remaing USeful Cycle Caclulator](https://github.com/DShubhamBhardwaj/AviationFailure/blob/main/Screenshots/RemainingUsefulLifeCalc.png)
 
 
 ## How It Works
